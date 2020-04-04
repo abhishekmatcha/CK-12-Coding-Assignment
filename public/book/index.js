@@ -51,6 +51,7 @@ renderChaptersData = (chaptersData) => {
                         <div class='child-container'  onclick=openLessonsList(${eachChapter.id})>
                             <div class='arrow-icon-${eachChapter.id} arrow-icon'></div>
                             <div class='element'><span>${eachChapter.sequenceNO}.  ${eachChapter.title}</span></div>
+                            <progress id="file" value='${eachChapter.completeCount}' max='${eachChapter.childrenCount}'></progress>
                         </div>
                         <div class='lessons-wrapper'>
                             <div id=${eachChapter.id} class='sub-contents-${eachChapter.id} hide-data'></div>
